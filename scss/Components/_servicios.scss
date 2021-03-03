@@ -1,0 +1,126 @@
+.services {
+  background-image: url(../Assets/corgi.jpg);
+  background-size: 100%;
+  min-height: 92vh;
+  background-repeat: no-repeat;
+
+  h1 {
+    color: $color-principal;
+    font-size: 50px;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  p {
+    color: $color-principal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.main-services {
+  background-image: url(../Assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 100px 0px 100px;
+}
+
+.online {
+  background-image: url(../Assets/fondo.online.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .online-bg {
+    background-color: rgba(234, 239, 253, 0.5);
+
+    h2 {
+      color: $color-principal;
+      font-size: $size-title;
+      font-family: "Yusei Magic", sans-serif;
+    }
+
+    p {
+      color: $color-principal;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .preguntar, .chatear, .relacionado {
+      padding: 0px;
+      position: relative;
+
+      img {
+        padding: 15px;
+        width: 200px;
+        height: 200px;
+        clip-path: circle(40% at 50% 50%);
+      }
+
+      .capa {
+        position: absolute;
+        top: 0px;
+        background-color: #7979f7;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        width: 200px;
+        height: 200px;
+        clip-path: circle(40% at 50% 50%);
+      }
+
+      &:hover > .capa {
+        opacity: 2;
+        visibility: visible;
+        cursor: pointer;
+
+        span {
+          color: #f2f4fa;
+          font-family: 'Yusei Magic', sans-serif;
+          margin-top: 30px;
+        }
+      }
+    }
+  
+    .input-search {
+      input {
+        width: 700px;
+        height: 40px;
+      }
+  
+      .btn-outline-success {
+        color: #010a41;
+        border-color: #010a41;
+  
+        &:hover {
+          background-color: #7979f7;
+          color: #010a41;
+          font-weight: bold;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.adopción {
+  background-color: blue;
+  height: 500px;
+}
+
+.history {
+  background-color: purple;
+  height: 500px;
+}
+
+.buy {
+  background-color: rgb(65, 73, 179);
+  height: 500px;
+}
+
+.delivery {
+  background-color: rgb(216, 72, 15);
+  height: 500px;
+}

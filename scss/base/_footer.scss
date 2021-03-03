@@ -1,0 +1,29 @@
+footer {
+  background-color: $bg-color;
+
+  .footer-item {
+    img {
+      width: 100px;
+    }
+  }
+
+  .icon {
+    .fab{
+      color: #ffffff;
+      font-size: 35px;
+    }
+  }
+
+  .footer-item {
+    h2 {
+      color: #bcd0ee;
+      font-family: 'Yusei Magic', sans-serif;
+    }
+
+    a, p {
+      color: #bcd0ee;
+      font-family: 'Mulish', sans-serif;
+    }
+  }
+
+}

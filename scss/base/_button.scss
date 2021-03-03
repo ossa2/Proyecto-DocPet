@@ -1,0 +1,15 @@
+button {
+  margin: 30px;
+  background-color: #233460;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-family: 'Mulish', sans-serif;
+
+  &:hover {
+    background-color: #c9d2d1;
+    color: #233460;
+    font-weight: bold;
+  }
+}

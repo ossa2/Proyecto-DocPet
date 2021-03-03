@@ -1,0 +1,269 @@
+// Carousel
+.carousel {
+  .carousel-item {
+    h5 {
+      color: $color-principal;
+      font-size: 50px;
+      font-family: 'Yusei Magic', sans-serif;
+    }
+
+    p {
+      color: #385399;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+    }
+
+    .carousel-caption {
+      top: 80%;
+    }
+
+    .carousel-caption-one {
+      position: $position-carousel;
+      top: 50%;
+      left: 10%;
+      text-align: left;
+    }
+
+    .carousel-caption-four {
+      position: $position-carousel;
+      top: 30%;
+      right: 10%;
+      text-align: right;
+    }
+
+    .carousel-caption-two {
+      position: $position-carousel;
+      top: 30%;
+      right: 10%;
+      text-align: right;
+
+      a {
+        img {
+          width: 25px;
+        }
+      }
+
+      h5 {
+        color: #c7d6fc;
+        font-size: 50px;
+        font-family: 'Yusei Magic', sans-serif;
+      }
+
+      p {
+        color: #f2f4fa;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+      }
+    }
+
+    .carousel-caption-three {
+      position: absolute;
+      top: 30%;
+      right: 15%;
+      bottom: 1.25rem;
+      left: 15%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #fff;
+      text-align: center;
+
+      .input {
+        .form-control {
+          width: 2000px;
+          height: 40px;
+        }
+
+        a {
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+// Main
+main {
+  background-image: url(../Assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 100px;
+  background-attachment: fixed;
+}
+
+
+//Search
+.cards {
+  margin-top: -150px;
+
+  .search-icon {
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #b2b3b4;
+    z-index: 10;
+
+    img {
+      transform: translate(10px, 20px);
+    }
+
+    p {
+      color: $color-principal;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+    }
+
+    &:hover {
+      animation: zoom 2s;
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(1);
+      }
+    
+      to {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+//Parallax
+.box1 {
+  background-image: url(../Assets/parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+
+  h3 {
+    font-size: 25px;
+    color: $color-principal;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+}
+
+//Information
+.information {
+  padding: 10px;
+
+  h2 {
+    color: $color-principal;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  i {
+    color: $color-principal;
+    font-size: 25px;
+  }
+}
+
+//steps
+.steps-cont {
+  background-color: rgba(1, 1, 78, .4);
+  border-radius: 10px;
+
+  .steps-text {
+    margin: 30px 60px;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+  }
+
+  h2, h3 {
+    font-size: 25px;
+    color: #f5f7fa;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bold;
+    color: $color-principal;
+    text-align: left;
+  }
+
+  ol {
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    list-style-image: url(Assets/bomb-solid.svg);
+    line-height: 1.6;
+    list-style-position: inside;
+    color: $color-principal;
+  }
+}
+
+//iconos
+.iconos {
+  img {
+    width: 70px;
+    margin: 30px;
+  }
+}
+
+//final
+.final {
+  .final-title {
+    font-size: 25px;
+    color: $color-principal;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .final-imagenes {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .consulta {
+    width: 250px;
+    position: relative;
+
+    img {
+      width: 250px;
+      height: 300px;
+      transition: all 500ms ease-out;
+    }
+
+    .capa {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(4, 3, 99, 0.5);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:hover > .capa {
+      opacity: 2;
+      visibility: visible;
+      cursor: pointer;
+
+      h3 {
+        color: #f2f4fa;
+        font-weight: bold;
+        font-family: 'Yusei Magic', sans-serif;
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,546 @@
+@charset "UTF-8";
+.navbar {
+  background-color: #010a41;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.navbar .navbar-brand span {
+  color: #b2b3b4;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .collapse .nav-link {
+  color: #bcd0ee;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+}
+.navbar .collapse .nav-link:hover {
+  background-color: #7979f7;
+  color: #010a41;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.carousel .carousel-item h5 {
+  color: #010a41;
+  font-size: 50px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.carousel .carousel-item p {
+  color: #385399;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.carousel .carousel-item .carousel-caption {
+  top: 80%;
+}
+.carousel .carousel-item .carousel-caption-one {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: left;
+}
+.carousel .carousel-item .carousel-caption-four {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+}
+.carousel .carousel-item .carousel-caption-two {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+}
+.carousel .carousel-item .carousel-caption-two a img {
+  width: 25px;
+}
+.carousel .carousel-item .carousel-caption-two h5 {
+  color: #c7d6fc;
+  font-size: 50px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.carousel .carousel-item .carousel-caption-two p {
+  color: #f2f4fa;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.carousel .carousel-item .carousel-caption-three {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.carousel .carousel-item .carousel-caption-three .input .form-control {
+  width: 2000px;
+  height: 40px;
+}
+.carousel .carousel-item .carousel-caption-three .input a img {
+  width: 30px;
+}
+.carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover {
+  background-color: transparent;
+}
+
+main {
+  background-image: url(../Assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 100px;
+  background-attachment: fixed;
+}
+
+.cards {
+  margin-top: -150px;
+}
+.cards .search-icon {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #b2b3b4;
+  z-index: 10;
+}
+.cards .search-icon img {
+  transform: translate(10px, 20px);
+}
+.cards .search-icon p {
+  color: #010a41;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.cards .search-icon:hover {
+  animation: zoom 2s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.box1 {
+  background-image: url(../Assets/parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+.box1 h3 {
+  font-size: 25px;
+  color: #010a41;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.information {
+  padding: 10px;
+}
+.information h2 {
+  color: #010a41;
+  font-family: "Mulish", sans-serif;
+  line-height: 1.6;
+  font-size: 25px;
+  font-weight: bold;
+}
+.information i {
+  color: #010a41;
+  font-size: 25px;
+}
+
+.steps-cont {
+  background-color: rgba(1, 1, 78, 0.4);
+  border-radius: 10px;
+}
+.steps-cont .steps-text {
+  margin: 30px 60px;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+.steps-cont h2, .steps-cont h3 {
+  font-size: 25px;
+  color: #f5f7fa;
+  font-family: "Yusei Magic", sans-serif;
+}
+.steps-cont p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #010a41;
+  text-align: left;
+}
+.steps-cont ol {
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  list-style-image: url(Assets/bomb-solid.svg);
+  line-height: 1.6;
+  list-style-position: inside;
+  color: #010a41;
+}
+
+.iconos img {
+  width: 70px;
+  margin: 30px;
+}
+
+.final .final-title {
+  font-size: 25px;
+  color: #010a41;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+.final .final-imagenes {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 5px;
+}
+.final .consulta {
+  width: 250px;
+  position: relative;
+}
+.final .consulta img {
+  width: 250px;
+  height: 300px;
+  transition: all 500ms ease-out;
+}
+.final .consulta .capa {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 3, 99, 0.5);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.final .consulta:hover > .capa {
+  opacity: 2;
+  visibility: visible;
+  cursor: pointer;
+}
+.final .consulta:hover > .capa h3 {
+  color: #f2f4fa;
+  font-weight: bold;
+  font-family: "Yusei Magic", sans-serif;
+  margin-top: 30px;
+}
+
+.services {
+  background-image: url(../Assets/corgi.jpg);
+  background-size: 100%;
+  min-height: 92vh;
+  background-repeat: no-repeat;
+}
+.services h1 {
+  color: #010a41;
+  font-size: 50px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.services p {
+  color: #010a41;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-services {
+  background-image: url(../Assets/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 100px 0px 100px;
+}
+
+.online {
+  background-image: url(../Assets/fondo.online.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.online .online-bg {
+  background-color: rgba(234, 239, 253, 0.5);
+}
+.online .online-bg h2 {
+  color: #010a41;
+  font-size: 30px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.online .online-bg p {
+  color: #010a41;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.online .online-bg .preguntar, .online .online-bg .chatear, .online .online-bg .relacionado {
+  padding: 0px;
+  position: relative;
+}
+.online .online-bg .preguntar img, .online .online-bg .chatear img, .online .online-bg .relacionado img {
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+  clip-path: circle(40% at 50% 50%);
+}
+.online .online-bg .preguntar .capa, .online .online-bg .chatear .capa, .online .online-bg .relacionado .capa {
+  position: absolute;
+  top: 0px;
+  background-color: #7979f7;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+  clip-path: circle(40% at 50% 50%);
+}
+.online .online-bg .preguntar:hover > .capa, .online .online-bg .chatear:hover > .capa, .online .online-bg .relacionado:hover > .capa {
+  opacity: 2;
+  visibility: visible;
+  cursor: pointer;
+}
+.online .online-bg .preguntar:hover > .capa span, .online .online-bg .chatear:hover > .capa span, .online .online-bg .relacionado:hover > .capa span {
+  color: #f2f4fa;
+  font-family: "Yusei Magic", sans-serif;
+  margin-top: 30px;
+}
+.online .online-bg .input-search input {
+  width: 700px;
+  height: 40px;
+}
+.online .online-bg .input-search .btn-outline-success {
+  color: #010a41;
+  border-color: #010a41;
+}
+.online .online-bg .input-search .btn-outline-success:hover {
+  background-color: #7979f7;
+  color: #010a41;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.adopción {
+  background-color: blue;
+  height: 500px;
+}
+
+.history {
+  background-color: purple;
+  height: 500px;
+}
+
+.buy {
+  background-color: #4149b3;
+  height: 500px;
+}
+
+.delivery {
+  background-color: #d8480f;
+  height: 500px;
+}
+
+footer {
+  background-color: #010a41;
+}
+footer .footer-item img {
+  width: 100px;
+}
+footer .icon .fab {
+  color: #ffffff;
+  font-size: 35px;
+}
+footer .footer-item h2 {
+  color: #bcd0ee;
+  font-family: "Yusei Magic", sans-serif;
+}
+footer .footer-item a, footer .footer-item p {
+  color: #bcd0ee;
+  font-family: "Mulish", sans-serif;
+}
+
+button {
+  margin: 30px;
+  background-color: #233460;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-family: "Mulish", sans-serif;
+}
+button:hover {
+  background-color: #c9d2d1;
+  color: #233460;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    padding: 0px;
+    height: 50px;
+  }
+  .navbar .container {
+    padding: 0px;
+  }
+  .navbar .container .navbar-brand {
+    font-size: 10px;
+  }
+  .navbar .container .navbar-toggler {
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar .container .collapse .navbar-nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: #010a41;
+    width: 100%;
+  }
+
+  .carousel {
+    margin: 0px;
+  }
+  .carousel .carousel-item img {
+    width: 100% !important;
+    height: 400px;
+  }
+
+  main {
+    padding: 0px;
+  }
+
+  .search .search {
+    flex-direction: column;
+  }
+
+  .box1 {
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .steps-cont {
+    margin: 0px;
+  }
+  .steps-cont .steps {
+    flex-direction: column;
+  }
+  .steps-cont .steps-text {
+    padding: 0px;
+    margin: 0px;
+  }
+  .steps-cont .steps-text img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+  .icons .iconos {
+    flex-wrap: wrap;
+  }
+
+  .final {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .final .container .stop-one .final-imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-item {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .navbar {
+    padding: 0px;
+    height: 50px;
+  }
+  .navbar .container {
+    padding: 0px;
+  }
+  .navbar .container .navbar-brand {
+    font-size: 10px;
+  }
+  .navbar .container .navbar-toggler {
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar .container .collapse .navbar-nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: #010a41;
+    width: 100%;
+  }
+
+  .carousel {
+    margin: 0px;
+  }
+  .carousel .carousel-item img {
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  main {
+    padding: 0px;
+  }
+
+  .search .cards {
+    flex-wrap: wrap;
+  }
+  .search .cards .search-icon {
+    margin: 0px;
+    width: 300px;
+  }
+
+  .box1 {
+    background-size: 500px;
+    background-position: center;
+  }
+
+  .steps-cont {
+    margin: 0px;
+  }
+  .steps-cont .steps {
+    flex-wrap: wrap;
+  }
+  .steps-cont .steps-text img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+  .icons .iconos {
+    flex-wrap: wrap;
+  }
+
+  .final {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .final .container .stop-one .final-imagenes {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer .footer-item {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

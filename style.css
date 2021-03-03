@@ -1,0 +1,529 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Estilos nav*/
+.navbar {
+  background-color: #010a41;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.navbar-brand span {
+  color: #b2b3b4;
+}
+
+.navbar .navbar-toggler  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  color: #bcd0ee;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+.nav-link:hover {
+  background-color: rgb(121, 121, 247);
+  color: #010a41;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/*Estilos carousel*/
+.carousel {
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-inner h5 {
+  color: #233460;
+  font-size: 50px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.carousel-inner p {
+  color: #385399;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.carousel-caption-one {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: left;
+}
+
+.carousel-caption-four {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+}
+
+.carousel-caption-three a img {
+  width: 25px;
+}
+
+.carousel-caption-two h5 {
+  color: #c7d6fc;
+  font-size: 50px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.carousel-caption-two p {
+  color: #f2f4fa;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.carousel-caption-two {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+}
+
+.carousel-caption {
+  top: 80%;
+}
+
+.carousel-caption-three {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel button:hover {
+  background-color: transparent;
+}
+
+
+main {
+  background-image: url(Assets/main.jpg);
+  background-repeat: no-repeat;
+  padding: 0px 100px;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+
+
+/* Estilos seccion "search*/
+.cards {
+  margin-top: -150px;
+}
+
+.search-icon {
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #b2b3b4;
+  z-index: 10;
+  background-attachment: fixed;
+}
+.search-icon img {
+  transform: translate(10px, 20px);
+}
+
+.search-icon p {
+  color: #010a41;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.search-icon:hover {
+  animation: zoom 2s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Estilos sección parallax */
+
+.box1 {
+  background-image: url(Assets/parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.box1 h3 {
+  font-size: 25px;
+  color: #010a41;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+
+
+/* Estilos seccion "information*/
+
+.information {
+  padding: 10px;
+}
+
+.information h2, i {
+  color: #010a41;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.6;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+/* Estilos seccion "steps"*/
+.steps-cont {
+  background-color: rgba(1, 1, 78, .4);
+  border-radius: 10px;
+  background-attachment: fixed;
+}
+
+.steps-text {
+  margin: 30px 60px;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+
+.steps h2 {
+  font-size: 25px;
+  color: #f5f7fa;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.steps p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: bold;
+  color: #010a41;
+  text-align: left;
+}
+
+.steps h3 {
+  font-size: 25px;
+  color:  #f5f7fa;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.steps ol {
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  list-style-image: url(Assets/bomb-solid.svg);
+  line-height: 1.6;
+  list-style-position: inside;
+  color: #010a41;
+}
+
+/* Estilos seccion "iconos"*/
+
+.iconos img {
+  width: 70px;
+  margin: 30px;
+}
+
+/* Estilos seccion "final*/
+
+.final-title h2 {
+  font-size: 25px;
+  color: #010a41;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.final-imagenes {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.consulta {
+  width: 250px;
+  position: relative;
+}
+
+.consulta img {
+  width: 250px;
+  height: 300px;
+  transition: all 500ms ease-out;
+}
+
+.consulta .capa {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 3, 99, 0.5);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.consulta:hover > .capa {
+  opacity: 2;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.consulta:hover > .capa h3 {
+  color: #f2f4fa;
+  font-weight: bold;
+  font-family: 'Yusei Magic', sans-serif;
+  margin-top: 30px;
+}
+
+
+
+
+/* Estilos footer */
+
+.footer {
+  background-color: #010a41;
+}
+
+.footer-item img {
+  width: 100px;
+}
+
+.fab {
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.footer .footer-item a, p {
+  color: #bcd0ee;
+  font-family: 'Mulish', sans-serif;
+}
+
+.footer .footer-item h2, p {
+  color: #bcd0ee;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.footer-two img {
+  width: 110px;
+}
+
+
+
+/* Estilos generales*/
+button {
+  margin: 30px;
+  background-color: #233460;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+button:hover{
+  background-color: #c9d2d1;
+  color: #233460;
+  font-weight: bold;
+}
+
+
+
+/*Estilos seccion de Contacto*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "Encabezado Encabezado"
+    "Izquierda Derecha"
+    "Map Map";
+  row-gap: 4px;
+  column-gap: 4px;
+}
+
+.grid-encabezado {
+  grid-area: Encabezado;
+}
+
+.grid-encabezado h1 {
+  color: #233460;
+  font-size: 30px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-weight: bold;
+}
+
+.grid-izquierda {
+  grid-area: Izquierda;
+}
+
+.grid-izquierda img {
+  width: 500px;
+  margin-bottom: 0px;
+}
+
+.grid-izquierda p {
+  color: #010a41;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.grid-derecha {
+  grid-area: Derecha;
+}
+
+.grid-map {
+  grid-area: Map;
+  text-align: center;
+}
+
+.form-label {
+  color: #010a41;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    padding: 0px;
+    height: 30px;
+  }
+
+  .navbar-toggler, .navbar-nav {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .navbar .container .navbar-brand {
+    font-size: 10px
+  }
+
+  .carousel {
+    margin: 0px;
+  }
+
+  .carousel-inner .carousel-caption h5{
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .carousel-inner .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+
+  .steps {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .steps .steps-text {
+    padding: 0px;
+  }
+
+  .steps .steps-text img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .final .final-imagenes {
+    flex-direction: column;
+  }
+
+  .final .final-title h2 {
+    text-align: center;
+  }
+
+  .final .final-imagenes .consulta {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .navbar {
+    padding: 0px;
+    height: 50px;
+  }
+
+  .navbar-toggler, .navbar-nav {
+    margin: 0px;
+  }
+
+  .carousel {
+    margin: 0px;
+  }
+
+  .carousel-inner .carousel-caption h5{
+    font-size: 30px;
+    margin: 0px;
+  }
+
+  .carousel-inner .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .search {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search .search-icon {
+    width: 40%;
+    display: inline;
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .information .text h2 {
+    font-size: 18px;
+  }
+
+  .steps {
+    flex-wrap: wrap;
+  }
+
+  .steps .steps-text {
+    margin: 0px;
+  }
+
+  .steps .steps-text img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .final .final-imagenes {
+    flex-wrap: wrap;
+  }
+}
