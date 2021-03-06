@@ -1,0 +1,19 @@
+%title {
+  color: $color-principal;
+  font-size: $size-title;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+%parrafo {
+  color: $color-principal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+%bg-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

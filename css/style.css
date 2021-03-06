@@ -257,32 +257,17 @@ main {
 }
 
 .main-services {
-  background-image: url(../Assets/main.jpg);
-  background-size: cover;
+  background-image: url(../Assets/fondo-tres-services.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 15px 100px 0px 100px;
 }
 
 .online {
   background-image: url(../Assets/fondo.online.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 .online .online-bg {
   background-color: rgba(234, 239, 253, 0.5);
-}
-.online .online-bg h2 {
-  color: #010a41;
-  font-size: 30px;
-  font-family: "Yusei Magic", sans-serif;
-}
-.online .online-bg p {
-  color: #010a41;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
 }
 .online .online-bg .preguntar, .online .online-bg .chatear, .online .online-bg .relacionado {
   padding: 0px;
@@ -297,7 +282,7 @@ main {
 .online .online-bg .preguntar .capa, .online .online-bg .chatear .capa, .online .online-bg .relacionado .capa {
   position: absolute;
   top: 0px;
-  background-color: #7979f7;
+  background-color: #010a41;
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
@@ -316,7 +301,7 @@ main {
   margin-top: 30px;
 }
 .online .online-bg .input-search input {
-  width: 700px;
+  width: 400px;
   height: 40px;
 }
 .online .online-bg .input-search .btn-outline-success {
@@ -330,14 +315,48 @@ main {
   border-radius: 5px;
 }
 
-.adopción {
-  background-color: blue;
-  height: 500px;
+.history {
+  background-image: url(../Assets/fondo-azul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.history .historia .vector {
+  height: 600pxpx;
+}
+.history .historia .vector img {
+  width: 500px;
+}
+.history .historia .buton-history button {
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid #010a41;
+  border-radius: none;
+  color: #010a41;
+}
+.history .historia .buton-history button:hover {
+  background-color: #010a41;
+  border: 2px solid #010a41;
+  color: white;
 }
 
-.history {
-  background-color: purple;
-  height: 500px;
+.adopción .adopta {
+  background-color: rgba(234, 239, 253, 0.6);
+}
+.adopción .adopta .card {
+  background-color: transparent;
+  padding: 5px;
+}
+.adopción .adopta .card h3 {
+  color: #010a41;
+  font-weight: bold;
+}
+.adopción .adopta .card p {
+  color: #010a41;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.adopción .adopta button {
+  width: 150px;
 }
 
 .buy {
@@ -541,6 +560,25 @@ button:hover {
   .footer .footer-item {
     flex-wrap: wrap;
   }
+}
+.online .online-bg h2, .history .historia h2, .adopción .adopta h2 {
+  color: #010a41;
+  font-size: 30px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.online .online-bg p, .history .historia p, .adopción .adopta p {
+  color: #010a41;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.online {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
