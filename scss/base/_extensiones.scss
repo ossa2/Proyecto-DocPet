@@ -4,6 +4,11 @@
   font-family: "Yusei Magic", sans-serif;
 }
 
+%title-dos {
+  color: #f2f4fa;
+  font-family: "Yusei Magic", sans-serif;
+}
+
 %parrafo {
   color: $color-principal;
   font-family: 'Open Sans', sans-serif;
@@ -11,9 +16,31 @@
   font-size: 20px;
 }
 
+%parrafo-dos {
+  font-size: 15px;
+  color: #f2f4fa;
+  font-family: 'Open Sans', sans-serif;
+}
+
 %bg-section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+%button {
+  margin: 30px;
+  background-color: #233460;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-family: 'Mulish', sans-serif;
+
+  &:hover {
+    background-color: #c9d2d1;
+    color: #233460;
+    font-weight: bold;
+  }
 }

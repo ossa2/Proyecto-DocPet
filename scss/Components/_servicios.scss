@@ -1,42 +1,14 @@
 // Header
 .services {
-  background-image: url(../Assets/corgi.jpg);
+  background-color: rgba(234, 239, 253, 0.6);
   background-size: 100%;
   min-height: 92vh;
   background-repeat: no-repeat;
-
-  h1 {
-    color: $color-principal;
-    font-size: 50px;
-    font-family: 'Yusei Magic', sans-serif;
-  }
-
-  p {
-    color: $color-principal;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-  }
 }
-
-
-// Main
-.main-services {
-  background-image: url(../Assets/fondo-tres-services.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15px 100px 0px 100px;
-}
-
 
 // Sección de consultas
 .online {
-  background-image: url(../Assets/fondo.online.jpg);
-  @extend %bg-section;
-
   .online-bg {
-    background-color: rgba(234, 239, 253, 0.5);
-
     h2 {
       @extend %title
     }
@@ -51,8 +23,8 @@
 
       img {
         padding: 15px;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         clip-path: circle(40% at 50% 50%);
       }
 
@@ -63,8 +35,8 @@
         transition: all 500ms ease-out;
         opacity: 0;
         visibility: hidden;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         clip-path: circle(40% at 50% 50%);
       }
 
@@ -77,13 +49,14 @@
           color: #f2f4fa;
           font-family: 'Yusei Magic', sans-serif;
           margin-top: 30px;
+          font-size: 15px;
         }
       }
     }
   
     .input-search {
       input {
-        width: 400px;
+        width: 600px;
         height: 40px;
       }
   
@@ -102,6 +75,75 @@
   }
 }
 
+
+// Main
+.main-services {
+  background-image: url(../Assets/fondation.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 100px 0px 100px;
+}
+
+// Compra de medicamentos
+.buy {
+  .buy-acces {
+    h2 {
+      @extend %title-dos;
+    }
+  
+    p {
+      @extend %parrafo-dos;
+    }
+
+    .images {
+      .access-one, .access-two {
+        img {
+          width: 300px;
+        }
+      }
+  
+      .access-three {
+        img {
+          width: 300px;
+          height: 400px;
+        }
+      }
+
+      .access-four {
+        img {
+          width: 300px;
+          height: 446px;
+        }
+      }
+
+      .boton-buy {
+        width: 200px;
+      }
+
+      .acces {
+        img {
+          transform: translate(10px, 20px);
+        }
+  
+        &:hover {
+          animation: zoom 2s;
+        }
+    
+        @keyframes zoom {
+          from {
+            transform: scale(1);
+          }
+        
+          to {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Historia clinica y carnet
 .history {
   background-image: url(../Assets/fondo-azul.jpg);
   background-size: cover;
@@ -143,34 +185,22 @@
   }
 }
 
-
 // sección de adopción
 .adopción {
   .adopta {
-    background-color: rgba(234, 239, 253, 0.6);
 
-    h2 {
-      @extend %title;
+    h2, h3 {
+      @extend %title-dos;
     }
   
     p {
-      @extend %parrafo
+      @extend %parrafo-dos;
     }
 
     .card {
       background-color: transparent;
       padding: 5px;
-
-      h3 {
-        color: $color-principal;
-        font-weight: bold;
-      }
-
-      p {
-        color: $color-principal;
-        font-size: 15px;
-        font-weight: lighter;
-      }
+      border: 1px solid white;
     }
 
     button {
@@ -179,12 +209,77 @@
   }
 }
 
-.buy {
-  background-color: rgb(65, 73, 179);
-  height: 500px;
+// Veterinario a domicilio
+.delivery {
+  background-image: url(../Assets/domicilio.png);
+  @extend %bg-section;
+  height: 600px;
+
+  .domi {
+    h2 {
+      @extend %title;
+    }
+
+    p {
+      @extend %parrafo;
+    }
+
+    .domi-one {
+      width: 50%;
+      height: 430px;
+
+      img {
+        width: 100px;
+      }
+
+      button {
+        width: 450px;
+        background-color: $bg-color;
+        border: 2px solid $color-principal;
+        color: white;
+
+        &:hover {
+          background-color: #c9d2d1;
+          color: $color-principal;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
-.delivery {
-  background-color: rgb(216, 72, 15);
-  height: 500px;
+
+// Donación
+.donation {
+  .donar {
+    h2 {
+      @extend %title-dos;
+    }
+
+    p {
+      @extend %parrafo-dos;
+    }
+
+    .animalove, .tepa, .huella, .damevida, .ceroindiferencia {
+      img {
+        width: 150px;
+        clip-path: circle(50% at 50% 50%);
+        cursor: pointer;
+      }
+    }
+
+    .buton-donar {
+      button {
+        width: 400px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+
+        &:hover {
+          background-color: white;
+          color: $color-principal
+        }
+      }
+    }
+  }
 }
