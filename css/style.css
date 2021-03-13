@@ -123,7 +123,7 @@
   background-color: transparent;
 }
 
-main {
+.main-index {
   background-image: url(../Assets/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -338,13 +338,6 @@ main {
   border-radius: 5px;
 }
 
-.main-services {
-  background-image: url(../Assets/fondation.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px 100px 0px 100px;
-}
-
 .buy .buy-acces .images .access-one img, .buy .buy-acces .images .access-two img {
   width: 300px;
 }
@@ -446,10 +439,6 @@ main {
   color: #010a41;
 }
 
-.main-adoptar {
-  background-image: url(../Assets/main-adoptar.png);
-}
-
 .hero {
   width: 100%;
   height: 700px;
@@ -491,14 +480,58 @@ main {
 .hero .absolute a img {
   width: 50px;
   z-index: 100;
+  margin: 0px;
 }
 .hero .absolute a img:hover {
   cursor: pointer;
 }
 
 .fotos .animal-uno img {
-  width: 100px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 250px;
+  height: 300px;
+  clip-path: polygon(49% 0, 100% 24%, 100% 76%, 50% 100%, 0 75%, 0 23%);
+}
+.fotos .animal-uno .dos {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.fotos .animal-dos img {
+  width: 250px;
+  height: 300px;
+  clip-path: polygon(49% 0, 100% 24%, 100% 76%, 50% 100%, 0 75%, 0 23%);
+  margin-top: -48px;
+}
+.fotos .animal-dos .cuatro {
+  margin-right: 10px;
+}
+.fotos .animal-dos .cinco {
+  margin-left: 10px;
+}
+.fotos .input-search input {
+  width: 600px;
+  height: 40px;
+}
+.fotos .input-search .btn-outline-success {
+  color: white;
+  border-color: white;
+}
+.fotos .input-search .btn-outline-success:hover {
+  background-color: #7979f7;
+  color: #010a41;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.fotos .buton-adoption button {
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: none;
+  color: white;
+}
+.fotos .buton-adoption button:hover {
+  background-color: #7979f7;
+  border: 2px solid #010a41;
+  color: #010a41;
 }
 
 footer {
@@ -711,7 +744,7 @@ button:hover {
   font-size: 20px;
 }
 
-.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p {
+.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p, .fotos h2 {
   font-size: 15px;
   color: #f2f4fa;
   font-family: "Open Sans", sans-serif;
@@ -723,6 +756,14 @@ button:hover {
   background-size: cover;
   position: relative;
   min-height: 100vh;
+}
+
+.main-services, .main-adoptar {
+  background-image: url(../Assets/fondation.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0px 100px 0px 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

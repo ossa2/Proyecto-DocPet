@@ -96,10 +96,7 @@
 
 // Main
 .main-services {
-  background-image: url(../Assets/fondation.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px 100px 0px 100px;
+  @extend %main;
 }
 
 // Compra de medicamentos
