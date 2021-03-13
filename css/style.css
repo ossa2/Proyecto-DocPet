@@ -24,6 +24,37 @@
   border-radius: 5px;
 }
 
+.inicio {
+  background-image: url(../Assets/low-poly-orca.gif);
+}
+.inicio .inicio-background h1 {
+  font-size: 60px;
+  z-index: 100;
+  color: white;
+  font-family: "Yusei Magic", sans-serif;
+}
+.inicio .inicio-background button {
+  width: 200px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  z-index: 100;
+}
+.inicio .inicio-background button:hover {
+  cursor: pointer;
+}
+.inicio .inicio-background a {
+  z-index: 100;
+}
+.inicio .inicio-background a img {
+  width: 50px;
+  z-index: 100;
+}
+.inicio .inicio-background a img:hover {
+  cursor: pointer;
+}
+
 .carousel .carousel-item h5 {
   color: #010a41;
   font-size: 50px;
@@ -101,7 +132,7 @@ main {
 }
 
 .cards {
-  margin-top: -150px;
+  margin-top: -110px;
 }
 .cards .search-icon {
   background-color: rgba(255, 255, 255, 0.6);
@@ -239,10 +270,25 @@ main {
 }
 
 .services {
-  background-color: rgba(234, 239, 253, 0.6);
-  background-size: 100%;
-  min-height: 92vh;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-color: #010a41;
+}
+.services video {
+  width: 100%;
+  height: auto;
+}
+.services .online {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.services .online .online-bg {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .online .online-bg .preguntar, .online .online-bg .chatear, .online .online-bg .relacionado {
@@ -398,6 +444,61 @@ main {
 .donation .donar .buton-donar button:hover {
   background-color: white;
   color: #010a41;
+}
+
+.main-adoptar {
+  background-image: url(../Assets/main-adoptar.png);
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-color: #010a41;
+}
+.hero video {
+  width: 100%;
+  height: auto;
+}
+.hero .absolute {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.hero .absolute h1 {
+  font-size: 60px;
+  z-index: 100;
+  color: white;
+  font-family: "Yusei Magic", sans-serif;
+}
+.hero .absolute button {
+  width: 200px;
+  border: 1px solid #010a41;
+  background-color: transparent;
+  color: #010a41;
+  font-weight: bold;
+  z-index: 100;
+}
+.hero .absolute button:hover {
+  cursor: pointer;
+}
+.hero .absolute a {
+  z-index: 100;
+}
+.hero .absolute a img {
+  width: 50px;
+  z-index: 100;
+}
+.hero .absolute a img:hover {
+  cursor: pointer;
+}
+
+.fotos .animal-uno img {
+  width: 100px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 footer {
@@ -610,17 +711,18 @@ button:hover {
   font-size: 20px;
 }
 
-.buy .buy-acces p, .adopción .adopta p, .donation .donar p {
+.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p {
   font-size: 15px;
   color: #f2f4fa;
   font-family: "Open Sans", sans-serif;
 }
 
-.delivery {
+.inicio, .delivery {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

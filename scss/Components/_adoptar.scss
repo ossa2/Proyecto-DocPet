@@ -1,0 +1,70 @@
+.main-adoptar {
+  background-image: url(../Assets/main-adoptar.png);
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-color: $bg-color;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+
+    p {
+      @extend %parrafo-dos;
+    }
+
+    h1 {
+      font-size: 60px;
+      z-index: 100;
+      color: white;
+      font-family: "Yusei Magic", sans-serif;
+    }
+
+    button {
+      width: 200px;
+      border: 1px solid $color-principal;
+      background-color: transparent;
+      color: $color-principal;
+      font-weight: bold;
+      z-index: 100;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      z-index: 100;
+      img {
+        width: 50px;
+        z-index: 100;
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+.fotos {
+  .animal-uno {
+    img {
+      width: 100px;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+  }
+}

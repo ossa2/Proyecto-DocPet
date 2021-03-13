@@ -1,3 +1,47 @@
+// Header
+.inicio {
+  background-image: url(../Assets/low-poly-orca.gif);
+  @extend %bg-section;
+
+  .inicio-background {
+    p {
+      @extend %parrafo-dos;
+    }
+
+    h1 {
+      font-size: 60px;
+      z-index: 100;
+      color: white;
+      font-family: "Yusei Magic", sans-serif;
+    }
+
+    button {
+      width: 200px;
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      z-index: 100;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      z-index: 100;
+      img {
+        width: 50px;
+        z-index: 100;
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 // Carousel
 .carousel {
   .carousel-item {
@@ -103,7 +147,7 @@ main {
 
 //Search
 .cards {
-  margin-top: -150px;
+  margin-top: -110px;
 
   .search-icon {
     background-color: rgba(255, 255, 255, .6);
