@@ -1,4 +1,6 @@
-@media only screen and (max-width: 400px) {
+// Index.html
+
+@media only screen and (max-width: 426px) {
   .navbar {
     padding: 0px;
     height: 50px;
@@ -25,6 +27,7 @@
       }
     }
   }
+
 
   .carousel {
     margin: 0px;
@@ -198,6 +201,119 @@
   .footer {
     .footer-item {
       flex-wrap: wrap;
+    }
+  }
+}
+
+
+
+
+// servicios
+@media only screen and (max-width: 426px) {
+  .services {
+    height: 950px;
+
+    video {
+      width: 100%;
+    }
+
+    .online {
+      padding: 0px;
+      margin: 0px;
+
+      .online-bg {
+        margin: 0px !important;
+        padding-top: 30px !important;
+        padding: 0px !important;
+        background-color: rgba($color: #fdfafa, $alpha: 0.9);
+      }
+      
+      .input-search {
+        align-items: center !important;
+
+        .input {
+          flex-direction: column;
+
+          input {
+            width: 230px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .imagenes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .main-services {
+    padding: 0px !important;
+  }
+
+  .buy {
+    .buy-acces {
+      .images {
+        .comprar {
+          flex-direction: column;
+          align-items: center;
+
+          .acces {
+            img {
+              width: 270px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .history {
+    .historia {
+      .carnet {
+        flex-direction: column;
+      }
+
+      .vector {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .adopción {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .delivery {
+    .domi-one {
+      padding: 0px;
+
+      .parrafo {
+        width: 270px;
+
+        p {
+          padding-top: 30px;
+        }
+      }
+
+      .boton-servicios {
+        width: 270px;
+      }
+    }
+  }
+
+  .donation {
+    .logos {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px !important;
+      margin: 0px !important;
     }
   }
 }

@@ -53,3 +53,23 @@
   background-attachment: fixed;
   padding: 0px 100px 0px 100px;
 }
+
+%animation {
+  img {
+    transform: translate(10px, 20px);
+  }
+
+  &:hover {
+    animation: zoom 2s;
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.1);
+    }
+  }
+}
