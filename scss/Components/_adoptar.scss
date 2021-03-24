@@ -154,4 +154,10 @@
   h2 {
     @extend %title-dos;
   }
+
+  .pasos{ 
+    img {
+      width: 200px;
+    }
+  }
 }

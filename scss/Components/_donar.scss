@@ -1,0 +1,84 @@
+// Main
+.main-donar {
+  @extend %main;
+}
+
+
+// ¿Cómo aportar?
+.donacion {
+  
+  .donacion-uno {
+
+    h2 {
+      @extend %title-dos;
+    }
+
+    p {
+      @extend %parrafo-dos;
+    }
+  }
+}
+
+// Parallax
+
+.sectiondos {
+  .background {
+    .uno {
+      background-image: url(../Assets/jirafa.jpg);
+      @extend %bg-donar;
+    }
+
+    .dos {
+      background-image: url(../Assets/zorro.jpg);
+      @extend %bg-donar;
+    }
+
+    .tres {
+      background-image: url(../Assets/perro.jpg);
+      @extend %bg-donar;
+    }
+  }
+}
+
+hr {
+  color: antiquewhite
+}
+
+
+// como donar
+
+.fundas {
+  .pasos {
+    h2 {
+      @extend %title-dos;
+    }
+  
+    p {
+      @extend %parrafo-dos;
+    }
+  }
+
+  .input-search {
+    input {
+      width: 550px;
+    }
+  }
+
+  .fundaciones {
+    img {
+      clip-path: circle(50% at 50% 50%);
+      width: 150px;
+      height: 150px;
+      filter: grayscale(80%);
+
+      &:hover {
+        filter: saturate(1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .donacion {
+    @extend %button-dos;
+  }
+}

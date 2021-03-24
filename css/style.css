@@ -540,6 +540,37 @@
   color: #010a41;
 }
 
+.funtion .pasos img {
+  width: 200px;
+}
+
+.sectiondos .background .uno {
+  background-image: url(../Assets/jirafa.jpg);
+}
+.sectiondos .background .dos {
+  background-image: url(../Assets/zorro.jpg);
+}
+.sectiondos .background .tres {
+  background-image: url(../Assets/perro.jpg);
+}
+
+hr {
+  color: antiquewhite;
+}
+
+.fundas .input-search input {
+  width: 550px;
+}
+.fundas .fundaciones img {
+  clip-path: circle(50% at 50% 50%);
+  width: 150px;
+  height: 150px;
+  filter: grayscale(80%);
+}
+.fundas .fundaciones img:hover {
+  filter: saturate(1);
+  cursor: pointer;
+}
 footer {
   background-color: #010a41;
 }
@@ -814,7 +845,7 @@ button:hover {
   font-family: "Yusei Magic", sans-serif;
 }
 
-.buy .buy-acces h2, .adopción .adopta h2, .adopción .adopta h3, .donation .donar h2, .fotos h1, .funtion h2 {
+.buy .buy-acces h2, .adopción .adopta h2, .adopción .adopta h3, .donation .donar h2, .fotos h1, .funtion h2, .donacion .donacion-uno h2, .fundas .pasos h2 {
   color: #f2f4fa;
   font-family: "Yusei Magic", sans-serif;
 }
@@ -826,8 +857,8 @@ button:hover {
   font-size: 20px;
 }
 
-.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p, .fotos h2 {
-  font-size: 15px;
+.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p, .fotos h2, .donacion .donacion-uno p, .fundas .pasos p {
+  font-size: 20px;
   color: #f2f4fa;
   font-family: "Open Sans", sans-serif;
 }
@@ -840,7 +871,20 @@ button:hover {
   min-height: 100vh;
 }
 
-.main-services, .main-adoptar {
+.fundas .donacion button {
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+.fundas .donacion button:hover {
+  background-color: #7979f7;
+  border: 2px solid #010a41;
+  color: #010a41;
+}
+
+.main-services, .main-adoptar, .main-donar {
   background-image: url(../Assets/fondation.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,6 +905,15 @@ button:hover {
   to {
     transform: scale(1.1);
   }
+}
+
+.sectiondos .background .uno, .sectiondos .background .dos, .sectiondos .background .tres {
+  background-size: contain;
+  background-position: center;
+  height: 419px;
+  width: 300px;
+  border-radius: 10px;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */

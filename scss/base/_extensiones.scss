@@ -1,14 +1,18 @@
+// Titulo principal en azul
 %title {
   color: $color-principal;
   font-size: $size-title;
   font-family: "Yusei Magic", sans-serif;
 }
 
+// Titulo principal en blanco
 %title-dos {
   color: #f2f4fa;
   font-family: "Yusei Magic", sans-serif;
 }
 
+
+// Parrafos en azul
 %parrafo {
   color: $color-principal;
   font-family: 'Open Sans', sans-serif;
@@ -16,12 +20,15 @@
   font-size: 20px;
 }
 
+// Parrafos en blanco
 %parrafo-dos {
-  font-size: 15px;
+  font-size: 20px;
   color: #f2f4fa;
   font-family: 'Open Sans', sans-serif;
 }
 
+
+// Background de algunas secciones en servicios
 %bg-section {
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +37,8 @@
   min-height: 100vh;
 }
 
+
+// Botones Generales
 %button {
   margin: 30px;
   background-color: #233460;
@@ -46,6 +55,24 @@
   }
 }
 
+%button-dos {
+  button {
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+
+    &:hover {
+      background-color: #7979f7;
+      border: 2px solid $color-principal;
+      color: $color-principal;
+    }
+  }
+}
+
+
+// Main general
 %main {
   background-image: url(../Assets/fondation.jpeg);
   background-repeat: no-repeat;
@@ -54,6 +81,8 @@
   padding: 0px 100px 0px 100px;
 }
 
+
+// Animaciones generales
 %animation {
   img {
     transform: translate(10px, 20px);
@@ -72,4 +101,15 @@
       transform: scale(1.1);
     }
   }
+}
+
+
+// Imagenes página donar-parallax
+%bg-donar {
+  background-size: contain;
+  background-position: center;
+  height: 419px;
+  width: 300px;
+  border-radius: 10px;
+  background-attachment: fixed;
 }
