@@ -1,0 +1,124 @@
+// Main
+.main-contacto {
+  @extend %main;
+}
+
+hr {
+  color: antiquewhite;
+  opacity: 1.25;
+}
+
+// Header
+header {
+  background-image: url(../Assets/coco.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  min-height: 90vh;
+
+  .coco {
+    height: 100vh;
+  }
+
+  .back {
+    img {
+      width: 800px;
+    }
+  }
+
+  .back-dos {
+    width: 739px;
+
+    h1 {
+      font-size: 60px;
+      z-index: 100;
+      color: $color-principal;
+      font-family: "Yusei Magic", sans-serif;
+    }
+
+    p {
+      @extend %parrafo;
+    }
+  }
+
+  .buton-contact {
+    button {
+      width: 250px;
+      background-color: $color-principal;
+      border: 2px solid $color-principal;
+      color: white;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $color-principal;
+        border-radius: 5px;
+        color: $color-principal;
+      }
+    }
+  }
+}
+
+
+// Encabezado
+.encabezado {
+  h2 {
+    @extend %title-dos;
+  }
+}
+
+
+// Formulario
+.formulario {
+  .info {
+    background-color: $color-principal;
+    border-radius: 15px;
+
+    .info-uno {
+      @extend %title-dos;
+    }
+
+    input, textarea {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .buton-contact {
+      width: 295px;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+  
+      &:hover {
+        background-color: #7979f7;
+        border: 2px solid $color-principal;
+        color: $color-principal;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .image {
+    background-color: white;
+    border-radius: 15px;
+    width: 650px;
+
+    img {
+      width: 650px;
+    }
+  }
+}
+
+// Mapa
+.pie {
+  h2 {
+    @extend %title-dos;
+  }
+}
+
+iframe {
+  border-radius: 15px;
+}

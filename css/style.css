@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.carousel .carousel-item h5 {
+.carousel .carousel-item h2 {
   color: #010a41;
   font-size: 50px;
   font-family: "Yusei Magic", sans-serif;
@@ -90,7 +90,7 @@
 .carousel .carousel-item .carousel-caption-two a img {
   width: 25px;
 }
-.carousel .carousel-item .carousel-caption-two h5 {
+.carousel .carousel-item .carousel-caption-two h2 {
   color: #c7d6fc;
   font-size: 50px;
   font-family: "Yusei Magic", sans-serif;
@@ -267,6 +267,9 @@
   font-weight: bold;
   font-family: "Yusei Magic", sans-serif;
   margin-top: 30px;
+}
+.final .boton button {
+  width: 200px;
 }
 
 .services {
@@ -540,8 +543,12 @@
   color: #010a41;
 }
 
-.funtion .pasos img {
-  width: 200px;
+.video-pajaro {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+.video-pajaro video {
+  width: 600px;
 }
 
 .sectiondos .background .uno {
@@ -556,6 +563,7 @@
 
 hr {
   color: antiquewhite;
+  opacity: 1.25;
 }
 
 .fundas .input-search input {
@@ -571,6 +579,93 @@ hr {
   filter: saturate(1);
   cursor: pointer;
 }
+hr {
+  color: antiquewhite;
+  opacity: 1.25;
+}
+
+header {
+  background-image: url(../Assets/coco.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  min-height: 90vh;
+}
+header .coco {
+  height: 100vh;
+}
+header .back img {
+  width: 800px;
+}
+header .back-dos {
+  width: 739px;
+}
+header .back-dos h1 {
+  font-size: 60px;
+  z-index: 100;
+  color: #010a41;
+  font-family: "Yusei Magic", sans-serif;
+}
+header .buton-contact button {
+  width: 250px;
+  background-color: #010a41;
+  border: 2px solid #010a41;
+  color: white;
+  border-radius: 5px;
+}
+header .buton-contact button:hover {
+  background-color: transparent;
+  border: 1px solid #010a41;
+  border-radius: 5px;
+  color: #010a41;
+}
+
+.formulario .info {
+  background-color: #010a41;
+  border-radius: 15px;
+}
+.formulario .info input, .formulario .info textarea {
+  width: 400px;
+  border-radius: 10px;
+}
+.formulario .info .buton-contact {
+  width: 295px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.formulario .info .buton-contact:hover {
+  background-color: #7979f7;
+  border: 2px solid #010a41;
+  color: #010a41;
+  font-weight: bold;
+}
+.formulario .image {
+  background-color: white;
+  border-radius: 15px;
+  width: 650px;
+}
+.formulario .image img {
+  width: 650px;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+.cr {
+  background-image: url(../Assets/preguntas.gif);
+}
+.cr h1 {
+  font-size: 60px;
+  z-index: 100;
+  color: white;
+  font-family: "Yusei Magic", sans-serif;
+}
+
 footer {
   background-color: #010a41;
 }
@@ -606,6 +701,20 @@ button:hover {
 }
 
 @media only screen and (max-width: 426px) {
+  .inicio.d-flex .inicio-background {
+    margin-top: 50px;
+  }
+  .inicio.d-flex .inicio-background p {
+    font-size: 14px;
+  }
+  .inicio.d-flex .inicio-background h1 {
+    font-size: 27px;
+  }
+
+  .main-index {
+    padding: 0px;
+  }
+
   .navbar {
     padding: 0px;
     height: 50px;
@@ -614,7 +723,8 @@ button:hover {
     padding: 0px;
   }
   .navbar .container .navbar-brand {
-    font-size: 10px;
+    font-size: 20px;
+    margin-left: 20px;
   }
   .navbar .container .navbar-toggler {
     margin: 0px;
@@ -625,22 +735,21 @@ button:hover {
     padding: 0px;
     background-color: #010a41;
     width: 100%;
+    height: 650px;
   }
 
   .carousel {
     margin: 0px;
   }
   .carousel .carousel-item img {
-    width: 100% !important;
-    height: 400px;
+    height: 300px;
   }
 
-  main {
-    padding: 0px;
-  }
-
-  .search .search {
+  .search {
     flex-direction: column;
+  }
+  .search .cards {
+    margin-top: 0px;
   }
 
   .box1 {
@@ -706,6 +815,16 @@ button:hover {
     width: 100%;
   }
 
+  .inicio.d-flex .inicio-background {
+    margin-top: 50px;
+  }
+  .inicio.d-flex .inicio-background p {
+    font-size: 14px;
+  }
+  .inicio.d-flex .inicio-background h1 {
+    font-size: 27px;
+  }
+
   .carousel {
     margin: 0px;
   }
@@ -714,12 +833,13 @@ button:hover {
     margin-top: 50px;
   }
 
-  main {
+  .main-index {
     padding: 0px;
   }
 
   .search .cards {
     flex-wrap: wrap;
+    margin-top: 0px;
   }
   .search .cards .search-icon {
     margin: 0px;
@@ -735,7 +855,10 @@ button:hover {
     margin: 0px;
   }
   .steps-cont .steps {
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .steps-cont .steps-text {
+    margin: 0px;
   }
   .steps-cont .steps-text img {
     width: 280px;
@@ -839,31 +962,277 @@ button:hover {
     margin: 0px !important;
   }
 }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .services video {
+    width: auto;
+  }
+  .services .online {
+    margin-top: 0px !important;
+  }
+  .services .online .online-bg {
+    padding: 0px !important;
+  }
+  .services .online .online-bg .input-search {
+    align-items: center !important;
+  }
+  .services .online .online-bg .input-search .input {
+    flex-direction: column;
+  }
+  .services .online .online-bg .input-search .input input {
+    width: 230px;
+    margin-bottom: 10px;
+  }
+  .services .imagenes {
+    flex-wrap: wrap;
+  }
+
+  .main-services {
+    padding: 0px !important;
+  }
+
+  .buy .images .comprar {
+    flex-wrap: wrap;
+  }
+
+  .carnet {
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .hero video {
+    width: auto;
+  }
+  .hero .absolute p {
+    font-size: 5px;
+  }
+  .hero .absolute h1 {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .hero .absolute button {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .fotos .input-search .input {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .fotos .botones {
+    flex-wrap: wrap;
+  }
+
+  .animal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .animal .animal-uno img {
+    margin: 0px;
+    height: 200px;
+    width: 130px;
+  }
+
+  .animal2 {
+    flex-wrap: wrap;
+  }
+  .animal2 .animal-dos img {
+    margin: 0px;
+    height: 200px;
+    width: 130px;
+  }
+
+  .video-pajaro video {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .hero video {
+    width: auto;
+  }
+  .hero .absolute p {
+    font-size: 15px !important;
+  }
+  .hero .absolute h1 {
+    font-size: 30px;
+  }
+  .hero .absolute .boton-adoptar {
+    color: white;
+  }
+
+  .fotos .input-search .input {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .fotos .botones {
+    flex-wrap: wrap;
+  }
+
+  .animal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .animal .animal-uno img {
+    margin: 0px;
+    height: 200px;
+    width: 130px;
+  }
+
+  .animal2 {
+    flex-wrap: wrap;
+  }
+  .animal2 .animal-dos img {
+    margin: 0px;
+    height: 200px;
+    width: 130px;
+  }
+
+  .video-pajaro video {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .main-donar {
+    padding: 0px;
+  }
+
+  .sectiondos .container .row .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectiondos .container .row .background .uno, .sectiondos .container .row .background .dos, .sectiondos .container .row .background .tres {
+    width: 75%;
+    margin: 20px 0px;
+  }
+
+  .hero .absolute p {
+    font-size: 15px;
+  }
+  .hero .absolute h1 {
+    font-size: 30px;
+  }
+
+  .donacion-uno {
+    padding: 0px !important;
+  }
+
+  .background {
+    flex-direction: column;
+  }
+
+  .fundas .input-search .input input {
+    width: 150px;
+  }
+  .fundas .fundaciones .primeras {
+    flex-direction: column;
+  }
+  .fundas .fundaciones .segundas {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .hero video {
+    width: auto;
+  }
+
+  .sectiondos .background {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sectiondos .background .uno, .sectiondos .background .dos {
+    margin-right: 20px;
+  }
+
+  .input-search .input input {
+    width: 250px;
+  }
+
+  .fundaciones .primeras, .fundaciones .segundas {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .coco .back-dos h1 {
+    font-size: 30px;
+  }
+  .coco .back-dos p {
+    font-size: 15px;
+  }
+
+  main {
+    padding: 0px !important;
+  }
+
+  #mensaje .formulario {
+    flex-direction: column;
+  }
+  #mensaje .formulario .info {
+    padding: 15px !important;
+    flex-direction: column;
+  }
+  #mensaje .formulario input, #mensaje .formulario textarea {
+    width: 300px;
+  }
+  #mensaje .formulario .image {
+    width: 100%;
+  }
+  #mensaje .formulario .image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .coco .todo {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .coco .todo .back {
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 0px !important;
+  }
+
+  #mensaje .formulario {
+    width: 100%;
+  }
+  #mensaje .formulario .info {
+    padding: 0px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .online .online-bg h2, .history .historia h2, .delivery .domi h2 {
   color: #010a41;
   font-size: 30px;
   font-family: "Yusei Magic", sans-serif;
 }
 
-.buy .buy-acces h2, .adopción .adopta h2, .adopción .adopta h3, .donation .donar h2, .fotos h1, .funtion h2, .donacion .donacion-uno h2, .fundas .pasos h2 {
+.buy .buy-acces h2, .adopción .adopta h2, .adopción .adopta h3, .donation .donar h2, .fotos h1, .donacion .donacion-uno h2, .fundas .pasos h2, .encabezado h2, .formulario .info .info-uno, .pie h2, .contenido h2 {
   color: #f2f4fa;
   font-family: "Yusei Magic", sans-serif;
 }
 
-.online .online-bg p, .history .historia p, .delivery .domi p {
+.online .online-bg p, .history .historia p, .delivery .domi p, header .back-dos p {
   color: #010a41;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 
-.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p, .fotos h2, .donacion .donacion-uno p, .fundas .pasos p {
+.inicio .inicio-background p, .buy .buy-acces p, .adopción .adopta p, .donation .donar p, .hero .absolute p, .fotos h2, .donacion .donacion-uno p, .fundas .pasos p, .contenido p {
   font-size: 20px;
   color: #f2f4fa;
   font-family: "Open Sans", sans-serif;
 }
 
-.inicio, .delivery {
+.inicio, .delivery, .cr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -884,7 +1253,7 @@ button:hover {
   color: #010a41;
 }
 
-.main-services, .main-adoptar, .main-donar {
+.main-services, .main-adoptar, .main-donar, .main-contacto, .main-preguntas {
   background-image: url(../Assets/fondation.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -911,7 +1280,7 @@ button:hover {
   background-size: contain;
   background-position: center;
   height: 419px;
-  width: 300px;
+  width: 260px;
   border-radius: 10px;
   background-attachment: fixed;
 }

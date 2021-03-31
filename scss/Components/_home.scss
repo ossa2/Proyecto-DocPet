@@ -45,7 +45,7 @@
 // Carousel
 .carousel {
   .carousel-item {
-    h5 {
+    h2 {
       color: $color-principal;
       font-size: 50px;
       font-family: 'Yusei Magic', sans-serif;
@@ -88,7 +88,7 @@
         }
       }
 
-      h5 {
+      h2 {
         color: #c7d6fc;
         font-size: 50px;
         font-family: 'Yusei Magic', sans-serif;
@@ -308,6 +308,12 @@
         font-family: 'Yusei Magic', sans-serif;
         margin-top: 30px;
       }
+    }
+  }
+
+  .boton {
+    button {
+      width: 200px;
     }
   }
 }

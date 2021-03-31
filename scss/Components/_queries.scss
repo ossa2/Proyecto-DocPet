@@ -1,6 +1,23 @@
 // Index.html
 
 @media only screen and (max-width: 426px) {
+
+  .inicio.d-flex {
+    .inicio-background {
+      margin-top: 50px;
+      p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 27px;
+      }
+    }
+  }
+
+  .main-index {
+    padding: 0px;
+  }
+
   .navbar {
     padding: 0px;
     height: 50px;
@@ -9,7 +26,8 @@
       padding: 0px;
       
       .navbar-brand {
-        font-size: 10px
+        font-size: 20px;
+        margin-left: 20px;
       }
 
       .navbar-toggler {
@@ -23,6 +41,7 @@
           padding: 0px;
           background-color: #010a41;
           width: 100%;
+          height: 650px;
         }
       }
     }
@@ -34,20 +53,17 @@
 
     .carousel-item {
       img {
-        width: 100% !important;
-        height: 400px;
+        height: 300px;
       }
     }
   }
 
-  main {
-    padding: 0px;
-  }
-
   .search {
-    .search {
       flex-direction: column;
-    }
+
+      .cards {
+        margin-top: 0px;
+      }
   }
 
   .box1 {
@@ -129,7 +145,19 @@
       }
     }
   }
-  
+
+  .inicio.d-flex {
+    .inicio-background {
+      margin-top: 50px;
+      p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 27px;
+      }
+    }
+  }
+
   .carousel {
     margin: 0px;
 
@@ -141,13 +169,14 @@
     }
   }
 
-  main {
+  .main-index {
     padding: 0px;
   }
 
   .search {
     .cards {
       flex-wrap: wrap;
+      margin-top: 0px;
 
       .search-icon {
         margin: 0px;
@@ -165,10 +194,11 @@
     margin: 0px;
 
     .steps {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     .steps-text {
+      margin: 0px;
       img {
         width: 280px;
         height: 280px;
@@ -208,7 +238,10 @@
 
 
 
-// servicios
+
+
+
+// Servicios
 @media only screen and (max-width: 426px) {
   .services {
     height: 950px;
@@ -314,6 +347,376 @@
       align-items: center;
       padding: 0px !important;
       margin: 0px !important;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .services {
+    video {
+      width: auto;
+    }
+    .online {
+      margin-top: 0px !important;
+
+      .online-bg {
+        padding: 0px !important;
+        .input-search {
+          align-items: center !important;
+  
+          .input {
+            flex-direction: column;
+  
+            input {
+              width: 230px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .imagenes {
+      flex-wrap: wrap;
+    }
+  }
+
+  .main-services {
+    padding: 0px !important;
+  }
+
+  .buy {
+    .images {
+      
+      .comprar {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .carnet {
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+// ADOPTAR
+@media only screen and (max-width: 426px) {
+  .hero {
+    video {
+      width: auto;
+    }
+
+    .absolute {
+      p {
+        font-size: 5px;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      button {
+        border: 2px solid #fff;
+        color: #fff;
+        margin-top: 20px
+      }
+    }  
+  }
+
+
+  .fotos {
+    .input-search {
+      .input {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+
+    .botones {
+      flex-wrap: wrap;
+    }
+  }
+
+
+  .animal {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .animal-uno {
+      img {
+        margin: 0px;
+        height: 200px;
+        width: 130px;
+      }
+    } 
+  }
+
+  .animal2{
+    flex-wrap: wrap;
+
+    .animal-dos {
+      img {
+        margin: 0px;
+        height: 200px;
+        width: 130px;
+      }
+    }  
+  }
+
+
+  .video-pajaro {
+    video {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .hero {
+    video {
+      width: auto;
+    }
+
+    .absolute {
+      p {
+        font-size: 15px !important;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .boton-adoptar {
+        color: white;
+      }
+    }
+  }
+
+  .fotos {
+    .input-search {
+      .input {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+
+    .botones {
+      flex-wrap: wrap;
+    }
+  }
+
+  .animal {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .animal-uno {
+      img {
+        margin: 0px;
+        height: 200px;
+        width: 130px;
+      }
+    } 
+  }
+
+  .animal2{
+    flex-wrap: wrap;
+
+    .animal-dos {
+      img {
+        margin: 0px;
+        height: 200px;
+        width: 130px;
+      }
+    }  
+  }
+
+  .video-pajaro {
+    video {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// Donar
+@media only screen and (max-width: 426px) {
+  .main-donar {
+    padding: 0px;
+  }
+
+  .sectiondos {
+    .container{
+      .row{
+        .background {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .uno, .dos, .tres {
+            width: 75%;
+            margin: 20px 0px;
+          }
+        } 
+      }
+    }
+  }
+
+  .hero {
+    .absolute {
+      p {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .donacion-uno {
+    padding: 0px !important;
+  }
+
+  .background {
+    flex-direction: column;
+  }
+
+  .fundas {
+    .input-search {
+      .input {
+        input {
+          width: 150px;
+        }
+      }
+    }
+
+    .fundaciones {
+      .primeras {
+        flex-direction: column;
+      }
+
+      .segundas {
+        flex-direction: column;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .hero {
+    video {
+      width: auto;
+    }
+  }
+
+  .sectiondos {
+    .background {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .uno, .dos {
+        margin-right: 20px; 
+      }
+    }
+  }
+
+  .input-search {
+    .input {
+      input {
+        width: 250px;
+      }
+    }
+  }
+
+  .fundaciones {
+    .primeras, .segundas {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+//Contacto
+@media only screen and (max-width: 426px) {
+  .coco {
+    .back-dos {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  main {
+    padding: 0px !important;
+  }
+
+  #mensaje { 
+    .formulario {
+      flex-direction: column;
+
+      .info {
+        padding: 15px !important;
+        flex-direction: column;
+      }
+
+      input, textarea {
+        width: 300px;
+      }
+
+
+      .image {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .coco {
+    .todo {
+      flex-wrap: wrap;
+      width: 100%;
+
+      .back {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  main {
+    padding: 0px !important;
+  }
+
+  #mensaje {
+    .formulario {
+      width: 100%;
+
+      .info {
+        padding: 0px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 }
