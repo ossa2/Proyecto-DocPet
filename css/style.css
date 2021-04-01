@@ -584,7 +584,7 @@ hr {
   opacity: 1.25;
 }
 
-header {
+.contacto {
   background-image: url(../Assets/coco.gif);
   background-position: center;
   background-repeat: no-repeat;
@@ -592,29 +592,29 @@ header {
   position: relative;
   min-height: 90vh;
 }
-header .coco {
+.contacto .coco {
   height: 100vh;
 }
-header .back img {
+.contacto .back img {
   width: 800px;
 }
-header .back-dos {
+.contacto .back-dos {
   width: 739px;
 }
-header .back-dos h1 {
+.contacto .back-dos h1 {
   font-size: 60px;
   z-index: 100;
   color: #010a41;
   font-family: "Yusei Magic", sans-serif;
 }
-header .buton-contact button {
+.contacto .buton-contact button {
   width: 250px;
   background-color: #010a41;
   border: 2px solid #010a41;
   color: white;
   border-radius: 5px;
 }
-header .buton-contact button:hover {
+.contacto .buton-contact button:hover {
   background-color: transparent;
   border: 1px solid #010a41;
   border-radius: 5px;
@@ -1223,7 +1223,7 @@ button:hover {
   font-family: "Yusei Magic", sans-serif;
 }
 
-.online .online-bg p, .history .historia p, .delivery .domi p, header .back-dos p {
+.online .online-bg p, .history .historia p, .delivery .domi p, .contacto .back-dos p {
   color: #010a41;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
