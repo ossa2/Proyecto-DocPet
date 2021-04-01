@@ -336,7 +336,10 @@
       }
 
       .boton-servicios {
-        width: 270px;
+
+        button {
+          width: 383px !important;
+        }
       }
     }
   }
@@ -347,6 +350,13 @@
       align-items: center;
       padding: 0px !important;
       margin: 0px !important;
+    }
+
+    .buton-donar {
+      button {
+        width: 270px !important;
+        margin: 5px;
+      }
     }
   }
 }

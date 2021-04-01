@@ -951,8 +951,8 @@ button:hover {
   .delivery .domi-one .parrafo p {
     padding-top: 30px;
   }
-  .delivery .domi-one .boton-servicios {
-    width: 270px;
+  .delivery .domi-one .boton-servicios button {
+    width: 383px !important;
   }
 
   .donation .logos {
@@ -960,6 +960,10 @@ button:hover {
     align-items: center;
     padding: 0px !important;
     margin: 0px !important;
+  }
+  .donation .buton-donar button {
+    width: 270px !important;
+    margin: 5px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
